@@ -7,12 +7,13 @@
   <div class="navbar-collapse collapse">
 
     <ul class="nav navbar-nav navbar-right">
-      <li><button type="button" data-toggle="modal" data-target="#myModal">Login</a></li>
-      <li><button type="button" data-toggle="modal" data-target="#myModal">Signup</a></li>
+      <li><a href type="text" data-toggle="modal" data-target="#myModal">Login</a></li>
+      <li><a class="signup" href type="button" data-toggle="modal" data-target="#myModal2">Signup</a></li>
     </ul>
   </div>
 </nav>
 
+<!-- MODAL FOR LOGGIN IN -->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
 
@@ -26,6 +27,34 @@
         Email <br><input type="text" name="email"><br>
         <br>
         Password <br><input type="text" name="password">
+      </form>
+    </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-info" name="submit">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">New user register</h4>
+  </div>
+    <div class="modal-body">
+      <form class="form-group" method="post">
+        First name <br><input type="text" name="first_name"><br>
+        <br>
+        Last name <br><input type="text" name="last_name"><br>
+        <br>
+        Email <br><input type="text" name="email"><br>
+        <br>
+        Password<br><input type="text" name="password"><br>
       </form>
     </div>
       <div class="modal-footer">
